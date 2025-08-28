@@ -3030,6 +3030,11 @@ blockquote cite::before {
 	padding: 20px 35px;
 }
 
+.portfoliobtn{
+	color: white !important;
+    text-decoration: none;
+}
+
 .contact-info-list li {
 	padding-left: 75px;
 	margin-bottom: 40px;
