@@ -404,7 +404,7 @@
                                         <h3 class="title">Get in Touch</h3>
                                     </div>
 
-                                    <form action="" method="">
+                                    <form action="https://formspree.io/f/mrboqwja" method="POST">
                                         <div class="form_group">
                                             <!-- <input type="hidden" name="access_key" value="5c1515f8-bcdb-40f9-aa75-df7e2a81eed7"> -->
                                             <input type="text" name="name" id="name" placeholder="Name"
@@ -513,7 +513,7 @@
                                         <h3 class="title">Get in Touch</h3>
                                     </div>
 
-                                    <form action="">
+                                    <form action="https://formspree.io/f/mrboqwja" method="POST">
                                         <div class="form_group">
                                             <!-- <input type="hidden" name="access_key" value="5c1515f8-bcdb-40f9-aa75-df7e2a81eed7"> -->
                                             <input type="text" name="name" id="name" placeholder="Name"
@@ -622,7 +622,8 @@
                                         <h3 class="title">Get in Touch</h3>
                                     </div>
 
-                                    <form action="">
+                                    <form action="https://formspree.io/f/mrboqwja" method="POST">
+                                        
                                         <div class="form_group">
                                             <!-- <input type="hidden" name="access_key" value="5c1515f8-bcdb-40f9-aa75-df7e2a81eed7"> -->
                                             <input type="text" name="name" id="name" placeholder="Name"
@@ -774,7 +775,8 @@
                 </div>
 
                 <div style="text-align: center;">
-                    <a class="btn tj-btn-primary" href="https://drive.google.com/drive/folders/1unw6X1oc2pzNnAGqcHnc1GhxzfEBaBbv?usp=drive_link">
+                    <a class="btn tj-btn-primary"
+                        href="https://drive.google.com/drive/folders/1unw6X1oc2pzNnAGqcHnc1GhxzfEBaBbv?usp=drive_link">
                         View All Portfolio</a>
                 </div>
             </div>
@@ -1523,7 +1525,63 @@
                             </div>
 
                             <div class="tj-contact-form">
-                                <form action="" method="POST">
+
+                                <!-- form orignel -->
+
+                                <!-- <form action="" method="POST">
+                                    <div class="row gx-3">
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="text" name="fname" id="fname" placeholder="First name"
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="text" name="lname" id="lname" placeholder="Last name"
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="email" name="email" id="email" placeholder="Email address"
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form_group">
+                                                <input type="tel" name="phone" id="phone" placeholder="Phone number"
+                                                    autocomplete="off">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form_group">
+                                                <select name="service" id="service" class="tj-nice-select">
+                                                    <option value="" selected disabled>Choose Service</option>
+                                                    <option value="uxui">UI/UX Design</option>
+                                                    <option value="web">Graphic Design</option>
+                                                    <option value="braning">Frontend Development</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form_group">
+                                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form_btn">
+                                                <button type="submit" class="btn tj-btn-primary">Send
+                                                    Message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form> -->
+
+
+                                <!-- edit form -->
+
+                                <form action="https://formspree.io/f/mrboqwja" method="POST">
                                     <div class="row gx-3">
                                         <div class="col-sm-6">
                                             <div class="form_group">
@@ -1572,6 +1630,12 @@
                                         </div>
                                     </div>
                                 </form>
+
+
+
+                                <!-- end form -->
+
+
                             </div>
                         </div>
                     </div>
@@ -1617,7 +1681,7 @@
             </div>
         </section>
 
-      
+
 
 
         <!-- CONTACT SECTION END -->
@@ -1652,28 +1716,9 @@
     </footer>
     <!-- FOOTER AREA END -->
 
-     <script src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://smtpjs.com/v3/smtp.js">
     </script>
-    <script>
-        function sendEmail(){
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "pateljemit2511@gmail.com",
-                Password: "**********A2170",
-                To: 'pateljemit2511@gmail.com',
-                From: document .getElementById("email").value,
-                Subject: "New Contact Form - From Portfolio",
-                Body: "First Name: " + document.getElementById("fname").value
-                +"<br> Last Name: " + document.getElementById("lname").value
-                +"<br> Email: " + document.getElementById("email").value
-                +"<br> Phone No: " + document.getElementById("phone").value
-                +"<br> Service: " + document.getElementById("service").value
-                +"<br> Message: " + document.getElementById("message").value
-            }).then(
-                message => alert("Message Send Succesfully")
-            );
-        }
-    </script>
+
 
     <!-- CSS here -->
     <script src="assets/js/jquery.min.js"></script>
@@ -1693,7 +1738,30 @@
 
     <script src="assets/js/main.js"></script>
 
-   
+    <!-- start contect form  -->
+    <script>
+        document.querySelector("form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const data = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+            if (response.ok) {
+                alert("✅ Thank you! Your message has been sent successfully.");
+                form.reset();
+            } else {
+                alert("❌ Oops! There was a problem submitting your form.");
+            }
+        });
+    </script>
+
+    <!-- end contect form  -->
+
+
+
 </body>
 
 </html>
