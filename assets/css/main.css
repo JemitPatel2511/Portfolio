@@ -771,6 +771,18 @@ body.loaded {
 	margin-right: 35px;
 }
 
+@media only screen and (max-width: 767px) {
+    .tj-header-area .logo-box {
+        max-width: 160px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tj-header-area .logo-box {
+        max-width: 160px;
+    }
+}
+
 .tj-header-area .logo-box a {
 	display: inline-block;
 }
